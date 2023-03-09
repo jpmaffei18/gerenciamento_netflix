@@ -8,16 +8,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início - Netflix </title>
+    <title> Podcasts </title>
     <link href="https://i.pinimg.com/originals/0f/66/dc/0f66dc3fe8ea994a70ed78472b2aa50f.png" rel="icon">
 </head>
 
 <style>
 
-.filmes img:hover{
-border: solid 2px white;
-overflow: hidden;
-}
+.img:hover{
+    border: 3px solid white;
+    overflow: hidden;
+}    
 
 .bg_video{
 	position: fixed; 
@@ -69,8 +69,8 @@ padding-top: 0;
 }
 
 .titulo img{
-    width: 600px;
-    height:150px;
+    width: 400px;
+    height:250px;
     margin-left: 1px;
     margin-right: 900px;
     margin-top: 175px;
@@ -117,7 +117,6 @@ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubunt
     padding-left: 40px;
 }
 
-
 .filmes p{
     font-weight:bolder;
     font-size: 30px;
@@ -129,7 +128,7 @@ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubunt
 .filmes img
 {
     width: 240px;
-    margin-left: 5px;
+    margin-left: 15px;
     border-radius:3px; 
 }
 
@@ -138,9 +137,9 @@ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubunt
 
 <body>
     
-                <video width="320" height="240" autoplay muted class="bg_video">
-                    <source src="Wandinha _ Trailer oficial _ Netflix.mp4" type="video/mp4">
-                    <source src="Wandinha _ Trailer oficial _ Netflix.ogg" type="video/ogg">
+                <video width="320" height="240" autoplay muted class="bg_video" loop>
+                    <source src="podpah.mp4" type="video/mp4">
+                    <source src="podpah.ogg" type="video/ogg">
                 </video>
 
     <div class="container-fluid">
@@ -153,19 +152,19 @@ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubunt
 <div class="Título">
 <ul class="menu_list">
     <li>
-        <a href="inicio5.php"> Início </a>
+        <a href="inicio2.php"> Início </a>
     </li>
 
     <li>
-        <a href="series5.php"> Séries </a>
+        <a href="series2.php"> Séries </a>
     </li>
 
     <li>
-        <a href="filmes5.php"> Filmes </a>
+        <a href="filmes2.php"> Filmes </a>
     </li>
 
     <li>
-        <a href="podcasts5.php"> Podcasts </a>
+        <a href="podcasts2.php"> Podcasts </a>
     </li>
 
     <li>
@@ -175,9 +174,10 @@ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubunt
     <li>
         <a href="#"> Minha Lista </a>
     </li>
+
     <a href="http://localhost:8080/senac_php3/netflix/netflix.php" style="font-size: 20px; float: right; margin-right: 40px; padding-top:0; color: white; text-decoration: none; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; "> sair </a>
     <a href="http://localhost:8080/senac_php3/netflix/perfis.php">
-    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/bb3a8833850498.56ba69ac33f26.png" style="width: 30px; float: right; margin-right: 20px;">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/84c20033850498.56ba69ac290ea.png" style="width: 30px; float: right; margin-right: 20px;">
     </a>
     <img src="https://www.udop.com.br/u_img/buscar/lupa.png" style="width: 30px; float: right; margin-right: 20px; ">
     
@@ -195,11 +195,11 @@ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubunt
         <div class="row" id="hero_infos">
             <div class="col-6">
                 <div class="titulo">
-                <img src="https://occ-0-993-1001.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABdxlUl_M2h5ERjFfyvuhRn2v-Az7Pwe_KxG_M9HSWbURJYrAs9pvqDPa3B3UPTCn3K_xS17OhTYmOca-lM4XAN7y5RogX7xYSfhIkk21Sgt9wNuZlqUFsCVdSD-tT7udzadO5zDd2hkAMGYPQJV9kbYoTY6n6u5X4YgGHG6AStY-EUePkvpO6A.png?r=50a">
+                <img src="https://cdn-bchbc.nitrocdn.com/vdaMyoNtMTUgDnoGhiSJXhHWfZYNDDGk/assets/static/optimized/rev-e898bbc/wp-content/uploads/2021/04/podpah.png">
                 
 
                 <h1> Top 1 de hoje no Brasil </h1>
-                <p>Inteligente, sarcástica e apática, Wandinha Addams pode estar meio morta por dentro, <br> mas na Escola Nunca Mais ela vai fazer amigos, inimigos e investigar assassinatos.</p> 
+                <p>Podpah é um podcast brasileiro apresentado por Igor Cavalari e Thiago Marques. <br> É considerado um dos maiores podcasts do país.</p> 
                 
                 <button>Assistir</button>
                 <div class="informacoes">
@@ -220,16 +220,16 @@ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubunt
 
         <p>Minha Lista</p>
         <tr>
- 
           <td></td>
-          <td><img src="https://occ-0-1380-420.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfVQiCs1xLey22l0WpgHklv7ryIOVjv1bD3hbaBajbtDMil7sncUP64v0VEIdWH7GR_H_wlBYBSkarvr18FYDgKwClaVsyPZsj_FuaEMpWPV76wvQjQIIQi9kQuFzryfftunycyWboKrGA67H3sxvbx-g8cjhOukVb3Zi2qqiKS4O-Py_zjWI03s7PvDZ1k.jpg?r=411"></td>
-          <td><img src="http://occ-0-1380-420.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABX38NJilA97jkd-IDa_TXBt7RKdrhpyaLta0AhPHg73Na3C0aDpTq0s8nHhv33El6H7-VqKyZSnIEF6K3ERFsUIH6Sol6-ueqA0Gfvjwj8LYzxixWHIxvmDMbNgdGR176KZF.jpg?r=282"></td>
-          <td><img src="love.jpeg"></td>
-          <td><img src="pre-playGlassOnio.jpeg" alt="pre-playGlassOnio"></td>
-          <td><img src="arcane (2).jpeg"></td>
-          <td><img src="round6.jpeg"></td>
+          <td><img src="https://i.scdn.co/image/ab6765630000ba8ada018f5c18ecebc5d3ff3b59" style="border: solid 1px white; margin-left: 50px;"></td>
+          <td><img src="https://pbs.twimg.com/profile_images/1564999047261442048/HR9LoNrT_400x400.jpg"></td>
+          <td><img src="https://yt3.googleusercontent.com/ytc/AL5GRJVjTc0SMu--M2Xp5T1LWnC7rHzRohdF9WYy6Kptcw=s900-c-k-c0x00ffffff-no-rj"></td>
 
-
+          
+          <td><img src="https://cdns-images.dzcdn.net/images/talk/cb93154c5865a5990e1b1726da6f5f4c/1000x1000.jpg" alt="pre-playGlassOnio"></td>
+          <td><img src="https://yt3.googleusercontent.com/7r9qo3jwLYtWsuy08sceaSaQcXRSWdbwAwRWgF7Jdosa67603miVjyKJ9sDOH9DiztNy3RRbvQ=s900-c-k-c0x00ffffff-no-rj"></td>
+          <td><img src="https://i.scdn.co/image/ab6765630000ba8a29534d8b9e2804724aaf569e"></td>
+          
         </tr>
 </div>
         

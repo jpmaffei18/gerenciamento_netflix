@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início - Netflix </title>
+    <title> Podcasts </title>
     <link href="https://i.pinimg.com/originals/0f/66/dc/0f66dc3fe8ea994a70ed78472b2aa50f.png" rel="icon">
 </head>
 
@@ -69,8 +69,8 @@ padding-top: 0;
 }
 
 .titulo img{
-    width: 600px;
-    height:150px;
+    width: 400px;
+    height:250px;
     margin-left: 1px;
     margin-right: 900px;
     margin-top: 175px;
@@ -128,7 +128,7 @@ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubunt
 .filmes img
 {
     width: 240px;
-    margin-left: 5px;
+    margin-left: 15px;
     border-radius:3px; 
 }
 
@@ -259,9 +259,9 @@ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubunt
 
 <body>
     
-                <video width="320" height="240" autoplay muted class="bg_video">
-                    <source src="Spider-man 3 (2007) - Trailer.mp4" type="video/mp4">
-                    <source src="Spider-man 3 (2007) - Trailer.ogg" type="video/ogg">
+                <video width="320" height="240" autoplay muted class="bg_video" loop>
+                    <source src="podpah.mp4" type="video/mp4">
+                    <source src="podpah.ogg" type="video/ogg">
                 </video>
 
     <div class="container-fluid">
@@ -274,7 +274,7 @@ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubunt
 <div class="Título">
 <ul class="menu_list">
     <li>
-        <a href="inicio4.php"> Início </a>
+        <a href="inicio.php"> Início </a>
     </li>
 
     <li>
@@ -371,11 +371,11 @@ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubunt
         <div class="row" id="hero_infos">
             <div class="col-6">
                 <div class="titulo">
-                <img src="https://occ-0-1380-185.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABVX1IY3HxFlVNXL6iBglgde2ZHsW48qDmC5DlIE4_SqxyXNWmTm_-T3H-HT_hKNRbIbtVAcXSkTKq_TntEv_a0arN5_ybpF6THboTOPSPdl5.png?r=331">
+                <img src="https://cdn-bchbc.nitrocdn.com/vdaMyoNtMTUgDnoGhiSJXhHWfZYNDDGk/assets/static/optimized/rev-e898bbc/wp-content/uploads/2021/04/podpah.png">
                 
 
-                <h1> Homem-aranha 3 </h1>
-                <p>Peter Parker enfrenta uma nova safra de vilões e uma força misteriosa que <br> mexe não só com seu traje de Homem-Aranha, mas também com seu comportamento.</p> 
+                <h1> Top 1 de hoje no Brasil </h1>
+                <p>Podpah é um podcast brasileiro apresentado por Igor Cavalari e Thiago Marques. <br> É considerado um dos maiores podcasts do país.</p> 
                 
                 <button>Assistir</button>
                 <div class="informacoes">
@@ -397,13 +397,14 @@ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubunt
         <p>Minha Lista</p>
         <tr>
           <td></td>
-          <td><img src="https://occ-0-1380-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZu9ZCpYV-wbClWuG3zYsQ7rtEwc3YYyXTg8kZyedBkkAiHa_M4u6esm_e7shfW8wmjqt9IB0JwA-mM-ANPjLUvnbonCH8rC1mg.webp?r=f41
-" style="border: solid 1px white"></td>
-          <td><img src="https://occ-0-420-1740.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYPB-5vbMXaodx2KCe0Cxiz5w8CBFHXZYN1Zzc8sC78BFNaTHUuEVBu2jLnQglc-9sLJKdPV2aDjTefdMdiOtWNTpUYYH8SwMuc.webp?r=91a"></td>
-          <td><img src="https://occ-0-420-1740.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABY0IEqvZJ3BJFV_5X46A9EXvJSZpMLCUwps6q0TMKp-qkgDYrgjbw8SPNFztHIvvElGTpUtDr9_H0KUPxbOHN5OXLIw7P3U861Y.webp?r=2ed"></td>
-          <td><img src="https://occ-0-1380-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWQ_40IveCyyikW5TlUBwFPtRj77hPzcyo0OP6IVydTFsL5J1yJIiBciyg3E772KwtcGALIB6fhO8NR6p9LshuQU5241wtSgUQ2J9MAzi23RKTvOkbrKcD3GBJPk89iAQhQr.jpg?r=81f" alt="pre-playGlassOnio"></td>
-          <td><img src="https://occ-0-1380-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfKPeCTQ6VoVukPF9zvoB0_z6-G_DYzIpni1vGum3gJVQrxb8QNY8HG_aAq0ZcWNSEZoStdhzyms6mhFqVz-Cxpod-AAJAL1Rdw.webp?r=956"></td>
-          <td><img src="https://occ-0-1380-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdJiIUiThRYJHrJW5EVoKVSSfuPzpvQ-t3OR5BHyLAXkxMeWds0XubJF520iyPJUtwMf96xOcevXTcaBwrISWZKEIXNfNvBnMYI.webp?r=d24"></td>
+          <td><img src="https://i.scdn.co/image/ab6765630000ba8ada018f5c18ecebc5d3ff3b59" style="border: solid 1px white; margin-left: 50px;"></td>
+          <td><img src="https://pbs.twimg.com/profile_images/1564999047261442048/HR9LoNrT_400x400.jpg"></td>
+          <td><img src="https://yt3.googleusercontent.com/ytc/AL5GRJVjTc0SMu--M2Xp5T1LWnC7rHzRohdF9WYy6Kptcw=s900-c-k-c0x00ffffff-no-rj"></td>
+
+          
+          <td><img src="https://cdns-images.dzcdn.net/images/talk/cb93154c5865a5990e1b1726da6f5f4c/1000x1000.jpg" alt="pre-playGlassOnio"></td>
+          <td><img src="https://yt3.googleusercontent.com/7r9qo3jwLYtWsuy08sceaSaQcXRSWdbwAwRWgF7Jdosa67603miVjyKJ9sDOH9DiztNy3RRbvQ=s900-c-k-c0x00ffffff-no-rj"></td>
+          <td><img src="https://i.scdn.co/image/ab6765630000ba8a29534d8b9e2804724aaf569e"></td>
           
         </tr>
 </div>

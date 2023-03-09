@@ -132,6 +132,129 @@ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubunt
     border-radius:3px; 
 }
 
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: black;
+  border: solid 2px red;
+  border-radius: 15px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: red;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+.popup .close:hover {
+  color: red;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  color: white;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.content button{
+    background-color: red;
+    border-radius: 30px;
+    color: white;
+    width: 100px;
+    height: 25px;
+    margin-left: 15px;
+    margin-top: 10px; 
+}
+
+.host {
+    margin-left: 100px;
+    border: solid 2px red;
+    border-radius: 20px; 
+    width: 130px;
+    height: 110px;
+    float: left;
+}
+
+.content p{
+    margin-top: 10px;
+    margin-left: 30px;
+    
+}
+
+#numeroGerado{
+    margin-left: 40px;
+    float: left;
+    margin-top: 0;
+}
+
+#numeroGerado2{
+    margin-left: 0;
+    margin-top: 0;
+    float: left;
+}
+
+#numeroGerado3{
+    margin-left: 0;
+    margin-top: 0;
+    float: left;
+    margin-top: 0;
+}
+
+#numeroGerado4{
+    margin-left: 0;
+    margin-top: 0;
+    float: left;
+}
+
+#numeroGerado5{
+    margin-left: 0;
+    margin-top: 0;
+    float: left;
+}
+
+.convidado{
+    float: left;
+    margin-left: 100px;
+    border: solid 2px red;
+    width: 100px;
+    border-radius: 20px; 
+    height: 100px;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.convidado input{
+    margin-top: 20px;
+    width: 90px;
+}
+
 
 </style>
 
@@ -164,12 +287,75 @@ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubunt
     </li>
 
     <li>
+        <a href="podcasts.php"> Podcasts </a>
+    </li>
+
+    <li>
         <a href="#"> Mais recentes </a>
     </li>
 
     <li>
         <a href="#"> Minha Lista </a>
     </li>
+
+    <li>
+    
+	<a href="#popup1" >Party</a>
+    
+
+        <div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>Netflix Party</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+
+    <div class="host">
+    <button onclick="gerarNumero(10)"> HOST</button>
+    <p> CÓDIGO: </p>
+    <p id="numeroGerado"></p>
+    <p id="numeroGerado2"></p>
+    <p id="numeroGerado3"></p>
+    <p id="numeroGerado4"></p>
+    <p id="numeroGerado5"></p>
+    </div>
+
+
+
+    <script>
+        function gerarNumero(tamanho) {
+            
+            var caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            const numeroAleatorio = caracteres.charAt(Math.floor(Math.random() * caracteres.length));
+            const numeroAleatorio2 = caracteres.charAt(Math.floor(Math.random() * caracteres.length));
+            const numeroAleatorio3 = caracteres.charAt(Math.floor(Math.random() * caracteres.length));
+            const numeroAleatorio4 = caracteres.charAt(Math.floor(Math.random() * caracteres.length));
+            const numeroAleatorio5 = caracteres.charAt(Math.floor(Math.random() * caracteres.length));
+            
+            document.getElementById("numeroGerado").textContent = numeroAleatorio;
+            document.getElementById("numeroGerado2").textContent = numeroAleatorio2;
+            document.getElementById("numeroGerado3").textContent = numeroAleatorio3;
+            document.getElementById("numeroGerado4").textContent = numeroAleatorio4;
+            document.getElementById("numeroGerado5").textContent = numeroAleatorio5;
+
+            
+        }
+    </script>
+
+        <div class="convidado">
+        <label>Insira o código de convite:<label>
+        <br>    
+        <input type="text"> </input>
+        </div> 
+
+		</div>
+	</div>
+</div>
+
+
+
+    </li>
+
+
 
     <a href="http://localhost:8080/senac_php3/netflix/netflix.php" style="font-size: 20px; float: right; margin-right: 40px; padding-top:0; color: white; text-decoration: none; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; "> sair </a>
     <a href="http://localhost:8080/senac_php3/netflix/perfis.php">
@@ -185,6 +371,9 @@ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubunt
 
 </header>
 </div>
+
+
+
 
 <div id="hero" class="container-fluid">
     <div class="container-fluid">

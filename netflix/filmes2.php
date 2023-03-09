@@ -132,128 +132,6 @@ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubunt
     border-radius:3px; 
 }
 
-.popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: black;
-  border: solid 2px red;
-  border-radius: 15px;
-  width: 30%;
-  position: relative;
-  transition: all 5s ease-in-out;
-}
-
-.popup h2 {
-  margin-top: 0;
-  color: red;
-  font-family: Tahoma, Arial, sans-serif;
-}
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
-}
-.popup .close:hover {
-  color: red;
-}
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
-  color: white;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-}
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.content button{
-    background-color: red;
-    border-radius: 30px;
-    color: white;
-    width: 100px;
-    height: 25px;
-    margin-left: 15px;
-    margin-top: 10px; 
-}
-
-.host {
-    margin-left: 100px;
-    border: solid 2px red;
-    border-radius: 20px; 
-    width: 130px;
-    height: 110px;
-    float: left;
-}
-
-.content p{
-    margin-top: 10px;
-    margin-left: 30px;
-    
-}
-
-#numeroGerado{
-    margin-left: 40px;
-    float: left;
-    margin-top: 0;
-}
-
-#numeroGerado2{
-    margin-left: 0;
-    margin-top: 0;
-    float: left;
-}
-
-#numeroGerado3{
-    margin-left: 0;
-    margin-top: 0;
-    float: left;
-    margin-top: 0;
-}
-
-#numeroGerado4{
-    margin-left: 0;
-    margin-top: 0;
-    float: left;
-}
-
-#numeroGerado5{
-    margin-left: 0;
-    margin-top: 0;
-    float: left;
-}
-
-.convidado{
-    float: left;
-    margin-left: 100px;
-    border: solid 2px red;
-    width: 100px;
-    border-radius: 20px; 
-    height: 100px;
-    padding: 10px;
-    padding-bottom: 0;
-}
-
-.convidado input{
-    margin-top: 20px;
-    width: 90px;
-}
 
 </style>
 
@@ -274,19 +152,19 @@ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubunt
 <div class="Título">
 <ul class="menu_list">
     <li>
-        <a href="inicio4.php"> Início </a>
+        <a href="inicio2.php"> Início </a>
     </li>
 
     <li>
-        <a href="series.php"> Séries </a>
+        <a href="series2.php"> Séries </a>
     </li>
 
     <li>
-        <a href="filmes.php"> Filmes </a>
+        <a href="filmes2.php"> Filmes </a>
     </li>
 
     <li>
-        <a href="podcasts.php"> Podcasts </a>
+        <a href="podcasts2.php"> Podcasts </a>
     </li>
 
     <li>
@@ -297,63 +175,9 @@ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubunt
         <a href="#"> Minha Lista </a>
     </li>
 
-    <li>
-    <a href="#popup1" >Party</a>
-    
-
-        <div id="popup1" class="overlay">
-	<div class="popup">
-		<h2>Netflix Party</h2>
-		<a class="close" href="#">&times;</a>
-		<div class="content">
-
-    <div class="host">
-    <button onclick="gerarNumero(10)"> HOST</button>
-    <p> CÓDIGO: </p>
-    <p id="numeroGerado"></p>
-    <p id="numeroGerado2"></p>
-    <p id="numeroGerado3"></p>
-    <p id="numeroGerado4"></p>
-    <p id="numeroGerado5"></p>
-    </div>
-
-
-
-    <script>
-        function gerarNumero(tamanho) {
-            
-            var caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-            const numeroAleatorio = caracteres.charAt(Math.floor(Math.random() * caracteres.length));
-            const numeroAleatorio2 = caracteres.charAt(Math.floor(Math.random() * caracteres.length));
-            const numeroAleatorio3 = caracteres.charAt(Math.floor(Math.random() * caracteres.length));
-            const numeroAleatorio4 = caracteres.charAt(Math.floor(Math.random() * caracteres.length));
-            const numeroAleatorio5 = caracteres.charAt(Math.floor(Math.random() * caracteres.length));
-            
-            document.getElementById("numeroGerado").textContent = numeroAleatorio;
-            document.getElementById("numeroGerado2").textContent = numeroAleatorio2;
-            document.getElementById("numeroGerado3").textContent = numeroAleatorio3;
-            document.getElementById("numeroGerado4").textContent = numeroAleatorio4;
-            document.getElementById("numeroGerado5").textContent = numeroAleatorio5;
-
-            
-        }
-    </script>
-
-        <div class="convidado">
-        <label>Insira o código de convite:<label>
-        <br>    
-        <input type="text"> </input>
-        </div> 
-
-		</div>
-	</div>
-</div>
-
-    </li>
-
     <a href="http://localhost:8080/senac_php3/netflix/netflix.php" style="font-size: 20px; float: right; margin-right: 40px; padding-top:0; color: white; text-decoration: none; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; "> sair </a>
     <a href="http://localhost:8080/senac_php3/netflix/perfis.php">
-    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/e70b1333850498.56ba69ac32ae3.png" style="width: 30px; float: right; margin-right: 20px;">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/84c20033850498.56ba69ac290ea.png" style="width: 30px; float: right; margin-right: 20px;">
     </a>
     <img src="https://www.udop.com.br/u_img/buscar/lupa.png" style="width: 30px; float: right; margin-right: 20px; ">
     
@@ -399,7 +223,7 @@ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubunt
           <td></td>
           <td><img src="https://occ-0-1380-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZu9ZCpYV-wbClWuG3zYsQ7rtEwc3YYyXTg8kZyedBkkAiHa_M4u6esm_e7shfW8wmjqt9IB0JwA-mM-ANPjLUvnbonCH8rC1mg.webp?r=f41
 " style="border: solid 1px white"></td>
-          <td><img src="https://occ-0-420-1740.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYPB-5vbMXaodx2KCe0Cxiz5w8CBFHXZYN1Zzc8sC78BFNaTHUuEVBu2jLnQglc-9sLJKdPV2aDjTefdMdiOtWNTpUYYH8SwMuc.webp?r=91a"></td>
+<td><img src="https://occ-0-420-1740.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYPB-5vbMXaodx2KCe0Cxiz5w8CBFHXZYN1Zzc8sC78BFNaTHUuEVBu2jLnQglc-9sLJKdPV2aDjTefdMdiOtWNTpUYYH8SwMuc.webp?r=91a"></td>
           <td><img src="https://occ-0-420-1740.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABY0IEqvZJ3BJFV_5X46A9EXvJSZpMLCUwps6q0TMKp-qkgDYrgjbw8SPNFztHIvvElGTpUtDr9_H0KUPxbOHN5OXLIw7P3U861Y.webp?r=2ed"></td>
           <td><img src="https://occ-0-1380-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWQ_40IveCyyikW5TlUBwFPtRj77hPzcyo0OP6IVydTFsL5J1yJIiBciyg3E772KwtcGALIB6fhO8NR6p9LshuQU5241wtSgUQ2J9MAzi23RKTvOkbrKcD3GBJPk89iAQhQr.jpg?r=81f" alt="pre-playGlassOnio"></td>
           <td><img src="https://occ-0-1380-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfKPeCTQ6VoVukPF9zvoB0_z6-G_DYzIpni1vGum3gJVQrxb8QNY8HG_aAq0ZcWNSEZoStdhzyms6mhFqVz-Cxpod-AAJAL1Rdw.webp?r=956"></td>

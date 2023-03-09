@@ -151,11 +151,15 @@ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubunt
     </li>
 
     <li>
-        <a href="series.php"> Séries </a>
+        <a href="series4.php"> Séries </a>
     </li>
 
     <li>
-        <a href="filmes.php"> Filmes </a>
+        <a href="filmes4.php"> Filmes </a>
+    </li>
+
+    <li>
+        <a href="podcasts4.php"> Podcasts </a>
     </li>
 
     <li>
